@@ -18,6 +18,7 @@
 #Sample Feature Definition Template
 Feature: Converts a long url to a Bitlink and sets additional parameters.
 
+@Sanity
 Scenario: Convert a URL to Bitlink
 Given Valid access token and request body having long_url
 When Sending POST Request

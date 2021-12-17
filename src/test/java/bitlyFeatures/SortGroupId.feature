@@ -18,6 +18,7 @@
 #Sample Feature Definition Template
 Feature: Returns a list of Bitlinks sorted by group.
 
+@Sanity
 Scenario: Fetch links sorted on number of clicks
 Given Group id is "valid Group id" and access token is "valid token"
 And Sort on number of Clicks
@@ -46,7 +47,7 @@ When Sending GET request
 Then Get link details with Status 200
 
 Scenario: Fetch details of link in hour
-Given Group id is "valid Group id" and access token is " invalid token"
+Given Group id is "valid Group id" and access token is "valid token"
 And Sort on number of Clicks
 And pass "unit" is "hour"
 When Sending GET request

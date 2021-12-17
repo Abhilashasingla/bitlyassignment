@@ -19,6 +19,7 @@
 
 Feature: Return details of the group
 
+@Sanity
 Scenario: Fetch details of group
 Given Group id is "valid Group id" and access token is "valid token"
 When Sending GET request
